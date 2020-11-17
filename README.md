@@ -2,6 +2,7 @@
 
 - i3
 - Polybar
+- Dunst
 - Alacritty
 
 ### Fonts
