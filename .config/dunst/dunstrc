@@ -243,6 +243,13 @@
 #    foreground = "#FFFFFF"
 #
 
+[Spotify]
+    appname = Spotify
+    format = "<b>Now Playing:</b>\n%s\n%b"
+    background = "#1db954"
+    foreground = "#ffffff"
+    timeout = 15
+
 [irc]
         appname = weechat
         timeout = 0
