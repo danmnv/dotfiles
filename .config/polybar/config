@@ -58,6 +58,7 @@ font-2 = siji:pixelsize=10;1
 font-3 = Font Awesome 5 Free Solid:pixelsize=9;1
 font-4 = Font Awesome 5 Free Brands:pixelsize=9;1
 font-5 = Hack Nerd Font:pixelsize=9;1
+font-6 = Hack Nerd Font:pixelsize=11;1
 
 modules-left = linux i3
 modules-center = spotify gpmdp
@@ -220,6 +221,29 @@ label-indicator-padding = 2
 label-indicator-margin = 1
 label-indicator-background = ${colors.secondary}
 label-indicator-underline = ${colors.secondary}
+
+;---------;
+; BATTERY ;
+;---------;
+
+[module/battery]
+type = internal/battery
+
+; This is useful in case the battery never reports 100% charge
+full-at = 99
+
+; Use the following command to list batteries and adapters:
+; $ ls -1 /sys/class/power_supply/
+battery = BAT1
+adapter = ACAD
+
+;
+; Default: 5
+poll-interval = 5
+
+label-discharging = "%{T7}%{T-} %percentage%%"
+label-charging = "%{T7}%{T-} %percentage%%"
+label-full = "%{T7}%{T-}%"
 
 ;------------;
 ; FileSystem ;
